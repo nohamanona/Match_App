@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GokonMatching</string>
+    <string name="TitleString">タイトル</string>
+    <string name="StartButton">スタート</string>
+    <string name="HistoryTexi">履歴</string>
+    <string name="SettingText">設定</string>
+    <string name="BackText">戻る</string>
+    <string name="SetParticipantsNumText">参加人数を設定してください</string>
+    <string name="BoysText">Man</string>
+    <string name="GirlsText">Woman</string>
+    <string name="DecisionButton">決定</string>
+    <string name="No1ManTurn">1人目の男性の番です。</string>
+    <string name="SelectOneWomen">好きな女性を1人選んでください</string>
+    <string name="No1WomanName">A</string>
+    <string name="No2ManTurn">2人目の男性の番です。</string>
+    <string name="No3ManTurn">3人目の男性の番です。</string>
+    <string name="No4ManTurn">4人目の男性の番です。</string>
+    <string name="No5ManTurn">5人目の男性の番です。</string>
+    <string name="No6ManTurn">6人目の男性の番です。</string>
+    <string name="No1WomanTurn">1人目の女性の番です。</string>
+    <string name="SelectOneMan">好きな男性を1人選んでください</string>
+    <string name="No2WomanTurn">2人目の女性の番です。</string>
+    <string name="No4WomanTurn">4人目の女性の番です。</string>
+    <string name="No3WomanTurn">3人目の女性の番です。</string>
+    <string name="No5WomanTurn">5人目の女性の番です。</string>
+    <string name="No6WomanTurn">6番目の女性の番です。</string>
+    <string name="MatchNum">マッチ数は...</string>
+    <string name="BackToTop">トップに戻る</string>
+</resources>

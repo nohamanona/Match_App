@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gokonmatching">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MatchNumActivity"/>
+        <activity android:name=".WomanSixSelectActivity" />
+        <activity android:name=".WomanFiveSelectActivity" />
+        <activity android:name=".WomanFourSelectActivity" />
+        <activity android:name=".WomanThreeSelectActivity" />
+        <activity android:name=".WomanTwoSelectActivity" />
+        <activity android:name=".ManSixSelectActivity" />
+        <activity android:name=".ManFiveSelectActivity" />
+        <activity android:name=".ManFourSelectActivity" />
+        <activity android:name=".ManThreeSelectActivity" />
+        <activity android:name=".WomanOneSelectActivity" />
+        <activity android:name=".ManTwoSelectActivity" />
+        <activity android:name=".ManOneSelectActivity" />
+        <activity android:name=".ParticipantsNumberSettingActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
