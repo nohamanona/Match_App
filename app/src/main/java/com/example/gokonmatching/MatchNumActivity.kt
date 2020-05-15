@@ -7,6 +7,7 @@ import android.preference.PreferenceManager
 import android.view.View
 import androidx.core.content.edit
 import kotlinx.android.synthetic.main.activity_match_num.*
+import org.json.JSONArray
 
 class MatchNumActivity : AppCompatActivity() {
 
@@ -61,6 +62,12 @@ class MatchNumActivity : AppCompatActivity() {
             }
             i++
         }
+
+        //Match listをpreferenceに保存
+        val PrefEditor = pref.edit()
+        val jsonArray = JSONArray(MatchList)
+        PrefEditor.putString("MatchList", jsonArray.toString())
+        PrefEditor.apply()
         var MatchPairAll = "Match Pair = "
         MatchList.forEach {
             MatchPairAll += "("
@@ -76,6 +83,7 @@ class MatchNumActivity : AppCompatActivity() {
 
         MutchNumText.text = MatchCount.toString() + "組"
         BackToTopButton.setOnClickListener { onBackToTopButtonTapped(it) }
+        NextButton.setOnClickListener { onNextButtonTapped(it) }
     }
     fun onBackToTopButtonTapped(view: View){
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
@@ -85,18 +93,9 @@ class MatchNumActivity : AppCompatActivity() {
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
         startActivity(intent)
     }
-    fun MatchJudge(ManNO:Int, ManSelNO:Int, WomanSelList:Array<Int>):Boolean{
-        /*
-        var returnNO = 0
-        when(ManSelNO){
-            1-> returnNO = WomanSelList[0]
-            2-> returnNO = WomanSelList[1]
-            3-> returnNO = WomanThreeSelNO
-            4-> returnNO = WomanFourSelNO
-            5-> returnNO = WomanFiveSelNO
-            6-> returnNO = WomanSixSelNO
-        }
-         */
-        return (ManNO == WomanSelList[ManSelNO-1])
+
+    fun onNextButtonTapped(view: View){
+        val intent = Intent(this, ResultActivity::class.java)
+        startActivity(intent)
     }
 }

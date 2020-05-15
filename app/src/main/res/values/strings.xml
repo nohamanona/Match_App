@@ -26,4 +26,6 @@
     <string name="No6WomanTurn">6番目の女性の番です。</string>
     <string name="MatchNum">マッチ数は...</string>
     <string name="BackToTop">トップに戻る</string>
+    <string name="next">次へ</string>
+    <string name="ResultStart">結果発表</string>
 </resources>
